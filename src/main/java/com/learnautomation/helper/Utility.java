@@ -23,6 +23,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Utility {
@@ -356,5 +357,43 @@ public class Utility {
 		 */
 
 	}
+
+	//For Dropdowns using By Locators
+	public static void DropdownSelectByValue(WebDriver driver,By dropdown, String Value)
+	{
+		Select sel=new Select(driver.findElement(dropdown));
+		sel.selectByValue(Value);
+	}
+	public static void DropdownSelectByIndex(WebDriver driver,By dropdown, String Index)
+	{
+		Select sel=new Select(driver.findElement(dropdown));
+		sel.selectByValue(Index);
+	}
+	public static void DropdownSelectByVisibleText(WebDriver driver,By dropdown, String VisibleText)
+	{
+		Select sel=new Select(driver.findElement(dropdown));
+		sel.selectByValue(VisibleText);
+	}
+	
+	//For Dropdowns using WebElements
+	public static void DropdownSelectByValue(WebDriver driver,WebElement dropdown, String Value)
+	{
+		Select sel=new Select(dropdown);
+		sel.selectByValue(Value);
+	}
+	public static void DropdownSelectByIndex(WebDriver driver,WebElement dropdown, String Index)
+	{
+		Select sel=new Select(dropdown);
+		sel.selectByValue(Index);
+	}
+	public static void DropdownSelectByVisibleText(WebDriver driver,WebElement dropdown, String VisibleText)
+	{
+		Select sel=new Select( dropdown);
+		sel.selectByValue(VisibleText);
+	}
+	
+
+
+
 
 }
