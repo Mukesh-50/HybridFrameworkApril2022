@@ -14,7 +14,7 @@ public class ExcelUtility
 {
 	static XSSFWorkbook wb;
 	
-	public static Object[][] getDataFromSheet(String sheetName)
+	public static Object[][] getDataFromSheet(String sheetName) throws IOException
 	{
 		
 		System.out.println("************ Loading Excel Data *******************");
@@ -32,7 +32,7 @@ public class ExcelUtility
 			
 			arr=new Object[row][column];
 			
-			for(int i=0;i<row;i++)
+			for(int i=1;i<row;i++)
 			{
 				for(int j=0;j<column;j++)
 				{
@@ -40,6 +40,7 @@ public class ExcelUtility
 					
 				}
 			}
+		
 		} catch (FileNotFoundException e) 
 		{
 			System.out.println("File not found "+e.getMessage());
@@ -50,8 +51,9 @@ public class ExcelUtility
 		}
 		
 		System.out.println("************ Data Loaded *******************");
-		
+		wb.close();
 		return arr;
+		
 		
 	}
 	

@@ -1,21 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="5" failed="0" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-12T10:23:46 IST" name="Suite" finished-at="2022-08-12T10:24:11 IST" duration-ms="24396">
+  <suite started-at="2022-08-12T18:21:11 IST" name="FeatureSuit" finished-at="2022-08-12T18:21:58 IST" duration-ms="47585">
     <groups>
     </groups>
-    <test started-at="2022-08-12T10:23:46 IST" name="Test" finished-at="2022-08-12T10:24:11 IST" duration-ms="24396">
-      <class name="com.learnautomation.testcases.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.learnautomation.testcases.LoginTest@60410cd]" started-at="2022-08-12T10:23:46 IST" name="setup" finished-at="2022-08-12T10:24:01 IST" duration-ms="15060" status="PASS">
+    <test started-at="2022-08-12T18:21:11 IST" name="Test" finished-at="2022-08-12T18:21:58 IST" duration-ms="47585">
+      <class name="com.learnautomation.testcases.AddUserTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.learnautomation.testcases.AddUserTest@7c24b813]" started-at="2022-08-12T18:21:11 IST" name="setup" finished-at="2022-08-12T18:21:22 IST" duration-ms="11427" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupDriver()[pri:0, instance:com.learnautomation.testcases.LoginTest@60410cd]" started-at="2022-08-12T10:24:02 IST" name="setupDriver" finished-at="2022-08-12T10:24:02 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:com.learnautomation.testcases.AddUserTest@7c24b813]" started-at="2022-08-12T18:21:22 IST" name="setupDriver" finished-at="2022-08-12T18:21:22 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method signature="loginApp(java.lang.String,java.lang.String)[pri:0, instance:com.learnautomation.testcases.LoginTest@60410cd]" started-at="2022-08-12T10:24:02 IST" name="loginApp" description="Login to application" data-provider="login" finished-at="2022-08-12T10:24:08 IST" duration-ms="6080" status="PASS">
+        <test-method signature="loginApp(java.lang.String,java.lang.String)[pri:1, instance:com.learnautomation.testcases.AddUserTest@7c24b813]" started-at="2022-08-12T18:21:22 IST" name="loginApp" description="Login to application" data-provider="login" finished-at="2022-08-12T18:21:22 IST" duration-ms="1" status="SKIP">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Null Login Data]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Null Login Data
+at com.learnautomation.testcases.AddUserTest.loginApp(AddUserTest.java:44)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginApp -->
+        <test-method signature="loginApp(java.lang.String,java.lang.String)[pri:1, instance:com.learnautomation.testcases.AddUserTest@7c24b813]" started-at="2022-08-12T18:21:22 IST" name="loginApp" description="Login to application" data-provider="login" finished-at="2022-08-12T18:21:29 IST" duration-ms="6833" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -31,19 +85,178 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginApp -->
-        <test-method is-config="true" signature="setupDriver()[pri:0, instance:com.learnautomation.testcases.LoginTest@60410cd]" started-at="2022-08-12T10:24:08 IST" name="setupDriver" finished-at="2022-08-12T10:24:08 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:com.learnautomation.testcases.AddUserTest@7c24b813]" started-at="2022-08-12T18:21:22 IST" name="setupDriver" finished-at="2022-08-12T18:21:22 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method signature="logoutTest()[pri:0, instance:com.learnautomation.testcases.LoginTest@60410cd]" started-at="2022-08-12T10:24:08 IST" name="logoutTest" description="Logout from application" finished-at="2022-08-12T10:24:10 IST" depends-on-methods="com.learnautomation.testcases.LoginTest.loginApp" duration-ms="1481" status="PASS">
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:com.learnautomation.testcases.AddUserTest@7c24b813]" started-at="2022-08-12T18:21:29 IST" name="setupDriver" finished-at="2022-08-12T18:21:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method signature="addUserDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.learnautomation.testcases.AddUserTest@7c24b813]" started-at="2022-08-12T18:21:29 IST" name="addUserDetails" description="Add Users" data-provider="User" finished-at="2022-08-12T18:21:33 IST" duration-ms="3344" status="SKIP">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+            <param index="3">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Null User Data]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Null User Data
+at com.learnautomation.pages.AddUser.UserDetails(AddUser.java:53)
+at com.learnautomation.testcases.AddUserTest.addUserDetails(AddUserTest.java:52)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addUserDetails -->
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:com.learnautomation.testcases.AddUserTest@7c24b813]" started-at="2022-08-12T18:21:33 IST" name="setupDriver" finished-at="2022-08-12T18:21:33 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method signature="addUserDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.learnautomation.testcases.AddUserTest@7c24b813]" started-at="2022-08-12T18:21:33 IST" name="addUserDetails" description="Add Users" data-provider="User" finished-at="2022-08-12T18:21:41 IST" duration-ms="7783" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Steve_50]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Kalyan_50]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[John Smith]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addUserDetails -->
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:com.learnautomation.testcases.AddUserTest@7c24b813]" started-at="2022-08-12T18:21:41 IST" name="setupDriver" finished-at="2022-08-12T18:21:41 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method signature="addUserDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.learnautomation.testcases.AddUserTest@7c24b813]" started-at="2022-08-12T18:21:41 IST" name="addUserDetails" description="Add Users" data-provider="User" finished-at="2022-08-12T18:21:48 IST" duration-ms="7487" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mark_50]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Meena_50]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[John Smith]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addUserDetails -->
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:com.learnautomation.testcases.AddUserTest@7c24b813]" started-at="2022-08-12T18:21:48 IST" name="setupDriver" finished-at="2022-08-12T18:21:48 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method signature="addUserDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.learnautomation.testcases.AddUserTest@7c24b813]" started-at="2022-08-12T18:21:48 IST" name="addUserDetails" description="Add Users" data-provider="User" finished-at="2022-08-12T18:21:56 IST" duration-ms="7528" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bill_50]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Nitesh_50]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[John Smith]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addUserDetails -->
+        <test-method signature="logoutTest()[pri:3, instance:com.learnautomation.testcases.AddUserTest@7c24b813]" started-at="2022-08-12T18:21:56 IST" name="logoutTest" description="Logout from application" finished-at="2022-08-12T18:21:57 IST" depends-on-methods="com.learnautomation.testcases.AddUserTest.loginApp" duration-ms="1439" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.learnautomation.testcases.LoginTest@60410cd]" started-at="2022-08-12T10:24:10 IST" name="tearDown" finished-at="2022-08-12T10:24:11 IST" duration-ms="993" status="PASS">
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:com.learnautomation.testcases.AddUserTest@7c24b813]" started-at="2022-08-12T18:21:56 IST" name="setupDriver" finished-at="2022-08-12T18:21:56 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.learnautomation.testcases.AddUserTest@7c24b813]" started-at="2022-08-12T18:21:57 IST" name="tearDown" finished-at="2022-08-12T18:21:58 IST" duration-ms="1113" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.learnautomation.testcases.LoginTest -->
+      </class> <!-- com.learnautomation.testcases.AddUserTest -->
     </test> <!-- Test -->
-  </suite> <!-- Suite -->
+  </suite> <!-- FeatureSuit -->
 </testng-results>

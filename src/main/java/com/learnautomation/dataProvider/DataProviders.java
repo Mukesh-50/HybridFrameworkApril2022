@@ -16,7 +16,7 @@ public class DataProviders
 	@DataProvider(name="User")
 	public static Object[][] getDataForUser() throws IOException
 	{
-		return	ExcelUtility.getDataFromSheet("User");
+		return	ExcelUtility.getDataFromSheet("Users");
 	}
 	
 	
