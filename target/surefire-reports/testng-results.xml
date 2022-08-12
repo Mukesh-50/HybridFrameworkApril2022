@@ -1,17 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-04-24T10:02:41 IST" name="Suite" finished-at="2022-04-24T10:02:41 IST" duration-ms="263">
+  <suite started-at="2022-08-12T10:23:46 IST" name="Suite" finished-at="2022-08-12T10:24:11 IST" duration-ms="24396">
     <groups>
     </groups>
-    <test started-at="2022-04-24T10:02:41 IST" name="Test" finished-at="2022-04-24T10:02:41 IST" duration-ms="263">
-      <class name="com.learnautomation.testcases.Sample">
-        <test-method signature="helloTest()[pri:0, instance:com.learnautomation.testcases.Sample@33990a0c]" started-at="2022-04-24T10:02:41 IST" name="helloTest" finished-at="2022-04-24T10:02:41 IST" duration-ms="72" status="PASS">
+    <test started-at="2022-08-12T10:23:46 IST" name="Test" finished-at="2022-08-12T10:24:11 IST" duration-ms="24396">
+      <class name="com.learnautomation.testcases.LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.learnautomation.testcases.LoginTest@60410cd]" started-at="2022-08-12T10:23:46 IST" name="setup" finished-at="2022-08-12T10:24:01 IST" duration-ms="15060" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- helloTest -->
-      </class> <!-- com.learnautomation.testcases.Sample -->
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:com.learnautomation.testcases.LoginTest@60410cd]" started-at="2022-08-12T10:24:02 IST" name="setupDriver" finished-at="2022-08-12T10:24:02 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method signature="loginApp(java.lang.String,java.lang.String)[pri:0, instance:com.learnautomation.testcases.LoginTest@60410cd]" started-at="2022-08-12T10:24:02 IST" name="loginApp" description="Login to application" data-provider="login" finished-at="2022-08-12T10:24:08 IST" duration-ms="6080" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginApp -->
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:com.learnautomation.testcases.LoginTest@60410cd]" started-at="2022-08-12T10:24:08 IST" name="setupDriver" finished-at="2022-08-12T10:24:08 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method signature="logoutTest()[pri:0, instance:com.learnautomation.testcases.LoginTest@60410cd]" started-at="2022-08-12T10:24:08 IST" name="logoutTest" description="Logout from application" finished-at="2022-08-12T10:24:10 IST" depends-on-methods="com.learnautomation.testcases.LoginTest.loginApp" duration-ms="1481" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.learnautomation.testcases.LoginTest@60410cd]" started-at="2022-08-12T10:24:10 IST" name="tearDown" finished-at="2022-08-12T10:24:11 IST" duration-ms="993" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.learnautomation.testcases.LoginTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
